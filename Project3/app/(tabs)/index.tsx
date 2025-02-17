@@ -76,7 +76,7 @@ export default function App() {
       </View>
 
       {/* Display Expenses Section */}
-      <View style={styles.displaySection}>
+      <View>
           <DisplayExpenses 
            dispatch={addDispatch}
            addState={addState} />

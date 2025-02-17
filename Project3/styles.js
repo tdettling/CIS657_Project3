@@ -111,6 +111,21 @@ const styles = StyleSheet.create({
     
   },
 
+  displayColumnItems:{
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'center',
+    
+  },
+
+  expenseRow: {
+    flexDirection: 'row', 
+    justifyContent: 'space-between',
+    alignItems: 'center',  
+    width: '80%', 
+    paddingVertical: 5, 
+},
+
   rowInput:{
     flexDirection: 'row',
     justifyContent: 'center',
@@ -123,7 +138,22 @@ const styles = StyleSheet.create({
     fontSize: 15
   }, 
 
-smallButton: {
+  expenseRowTextStyle: {
+    color: '#000000',  
+    fontFamily: 'Verdana', 
+    fontSize: 13,  
+    height: 40,  
+    margin: 11,  
+    borderWidth: 5, 
+    borderColor: '#000000',  
+    backgroundColor: '#FFFFFF',  
+    padding: 8,  
+    paddingLeft: 30,  
+    paddingRight: 60,  
+  }, 
+
+
+  smallButton: {
     flexDirection: 'row',
     justifyContent: 'center',
     alignItems: 'center',
