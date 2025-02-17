@@ -7,7 +7,8 @@ const styles = StyleSheet.create({
     backgroundColor: '#002ddb', 
     borderColor: 'black',
     borderWidth: 4,
-    paddingTop: 57
+    paddingTop: 57, 
+    alignItems: 'center', 
   },
 
   titleTextStyle: {
@@ -96,16 +97,46 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
 
+  displaySection:{
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'center',
+
+  },
+
+  displayRowedItems:{
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
+    
+  },
+
   rowInput:{
     flexDirection: 'row',
     justifyContent: 'center',
     alignItems: 'center',
   },
+
   secondaryTextStyle: {
     color: '#fff', 
     fontFamily: 'Verdana', 
     fontSize: 15
   }, 
+
+smallButton: {
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#a1a0b0',
+    padding: 2,  
+    borderWidth: 2, 
+    borderTopLeftRadius: 6,  
+    borderTopRightRadius: 6,  
+    width: 50,
+    height: 50,  
+    margin: 3, 
+
+}
 });
 
 export default styles;
