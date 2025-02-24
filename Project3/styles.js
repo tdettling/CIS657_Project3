@@ -4,7 +4,7 @@ import { StyleSheet } from 'react-native';
 const styles = StyleSheet.create({
   rootStyle: {
     flex: 1, 
-    backgroundColor: '#002ddb', 
+    //backgroundColor: '#002ddb', 
     borderColor: 'black',
     borderWidth: 4,
     paddingTop: 57, 
@@ -13,14 +13,27 @@ const styles = StyleSheet.create({
 
   titleTextStyle: {
     flexDirection: 'row',
-    backgroundColor: '#002ddb',
+    //backgroundColor: '#002ddb',
     alignItems: 'center',
     justifyContent: 'center',
     marginTop: 20,
-    color: '#fff', 
+    color: '#f7b1fc', 
     fontFamily: 'Verdana', 
     fontSize: 30, 
     fontWeight: 'bold', 
+    margin: 5,
+  }, 
+
+  displayMessageTextStyle: {
+    flexDirection: 'row',
+    //backgroundColor: '#002ddb',
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginTop: 20,
+    color: '#f7b1fc', 
+    fontFamily: 'Verdana', 
+    fontSize: 25, 
+    //fontWeight: 'bold', 
     margin: 5,
   }, 
 
@@ -62,27 +75,52 @@ const styles = StyleSheet.create({
     backgroundColor: '#DDDDDD',
     paddingLeft: 30, 
     paddingRight:60,
-    flexDirection: 'row'
+    flexDirection: 'row',
+    flexWrap: 'wrap', 
+    textAlign: 'left', 
+    flex: 1, 
    }, 
 
  buttonStyle: {
     flexDirection: 'row',
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#a1a0b0',
+    backgroundColor: '#e685ed',
     padding: 3,
-    borderWidth: 3,
+    borderWidth: 4,
     borderTopLeftRadius: 10,
     borderTopRightRadius: 10,
-    width: 90, 
+    width: 150, 
     height: 90, 
     margin: 5,
 },
 
+titleButtonStyle: {
+  flexDirection: 'row',
+  justifyContent: 'center',
+  alignItems: 'center',
+  backgroundColor: '#e685ed',
+  padding: 10, 
+  borderWidth: 3,
+  borderRadius: 20, 
+  width: 350,  
+  height: 150, 
+  alignSelf: 'center',  
+  position: 'absolute', 
+  top: '40%', 
+  marginTop: 275, 
+},
+
+titleButtonTextStyle: {
+  color: '#000000', 
+  fontFamily: 'Verdana', 
+  fontSize: 27
+},
+
   buttonTextStyle: {
-    color: '#000000', 
+    color: '#430247', 
     fontFamily: 'Verdana', 
-    fontSize: 15
+    fontSize: 22
   },
 
   buttonSection:{
@@ -101,6 +139,8 @@ const styles = StyleSheet.create({
     flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center',
+     alignSelf: 'stretch',
+     flexWrap: 'wrap',  
 
   },
 
@@ -108,6 +148,8 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'center',
     alignItems: 'center',
+     alignSelf: 'stretch', 
+     flexWrap: 'wrap', 
     
   },
 
@@ -115,7 +157,7 @@ const styles = StyleSheet.create({
     flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center',
-    
+    alignSelf: 'stretch',
   },
 
   expenseRow: {
@@ -124,13 +166,27 @@ const styles = StyleSheet.create({
     alignItems: 'center',  
     width: '80%', 
     paddingVertical: 5, 
+    alignSelf: 'stretch', 
+    flexWrap: 'wrap', 
 },
 
   rowInput:{
     flexDirection: 'row',
     justifyContent: 'center',
     alignItems: 'center',
+     alignSelf: 'stretch',
+     flexWrap: 'wrap',  
   },
+
+  addExpensesContainer:{
+    borderBottomWidth: 10, 
+    borderBottomColor:'#f7b1fc', 
+    marginTop: 20,
+    marginBottom: 20, 
+    paddingBottom: 40, 
+    paddingLeft: 27, 
+    paddingRight: 27,
+  }, 
 
   secondaryTextStyle: {
     color: '#fff', 
@@ -142,14 +198,19 @@ const styles = StyleSheet.create({
     color: '#000000',  
     fontFamily: 'Verdana', 
     fontSize: 13,  
-    height: 40,  
+    height: 55,  
+    width: 200, 
     margin: 11,  
     borderWidth: 5, 
     borderColor: '#000000',  
     backgroundColor: '#FFFFFF',  
-    padding: 8,  
-    paddingLeft: 30,  
-    paddingRight: 60,  
+    padding: 2,  
+    paddingLeft: 3,  
+    paddingRight: 3,
+    flexWrap: 'wrap', 
+    textAlign: 'left', 
+    flex: 1, 
+    alignSelf: 'stretch'
   }, 
 
 
@@ -166,7 +227,13 @@ const styles = StyleSheet.create({
     height: 50,  
     margin: 3, 
 
-}
+}, 
+
+  backgroundStyle: {
+    flex: 1, 
+    width: '100%', 
+    height: '100%',
+  }, 
 });
 
 export default styles;
